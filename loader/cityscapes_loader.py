@@ -9,76 +9,77 @@ from utils.utils import recursive_glob
 
 
 class Cityscapes:
-    n_classes = 19
+    n_classes = 20
     ignore_index = 250
 
-    colors = [  # [  0,   0,   0],
-        [128, 64, 128],
-        [244, 35, 232],
-        [70, 70, 70],
-        [102, 102, 156],
-        [190, 153, 153],
-        [153, 153, 153],
-        [250, 170, 30],
-        [220, 220, 0],
-        [107, 142, 35],
-        [152, 251, 152],
-        [0, 130, 180],
-        [220, 20, 60],
+    colors = [  [  0,   0,   0],
+        [0, 102, 0],
+        [255, 153, 204],
+        [99, 66, 34],
+        [0, 255, 0],
+        [0, 0, 255],
+        [134, 255, 239],
+        [102, 0, 204],
+        [255, 0, 127],
+        [255, 255, 0],  
+        [170, 170, 170],
+        [99, 66, 34],
+        [204, 153, 255],
+        [110, 22, 138],
+        [41, 121, 255],
+        [0, 153, 153],
+        [0, 128, 255],
+        [64, 64, 64],         
         [255, 0, 0],
-        [0, 0, 142],
-        [0, 0, 70],
-        [0, 60, 100],
-        [0, 80, 100],
-        [0, 0, 230],
-        [119, 11, 32],
+        [102, 0, 0],
     ]
 
     label_colours = dict(zip(range(n_classes), colors))
 
-    void_classes = [0, 1, 2, 3, 4, 5, 6, 9, 10, 14, 15, 16, 18, 29, 30, -1]
+    void_classes = [-1]
     valid_classes = [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
         7,
         8,
+        9,
+        10,
         11,
         12,
         13,
+        14,
+        15,
+        16,
         17,
+        18,
         19,
-        20,
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        31,
-        32,
-        33,
     ]
     class_names = [
-        "unlabelled",
-        "road",  # 0
-        "sidewalk",  # 1
-        "building",  # 2
-        "wall",  # 3
-        "fence",  # 4
-        "pole",  # 5
-        "traffic_light",  # 6
-        "traffic_sign",  # 7
-        "vegetation",  # 8
-        "terrain",  # 9
-        "sky",  # 10
-        "person",  # 11
-        "rider",  # 12
-        "car",  # 13
-        "truck",  # 14
-        "bus",  # 15
-        "train",  # 16
-        "motorcycle",  # 17
-        "bicycle",  # 18
+        "void",
+        "grass",
+        "bush",
+        "dirt",
+        "tree",
+        "sky",
+        "puddle",
+        "fence",
+        "object",
+        "vehicle",  
+        "concrete",
+        "mud",
+        "person",
+        "rubble",
+        "barrier",
+        "pole",
+        "water",
+        "asphalt",         
+        "building",
+        "log",
     ]
 
     class_map = dict(zip(valid_classes, range(n_classes)))
