@@ -60,7 +60,7 @@ class Cityscapes:
         19,
     ]
     class_names = [
-        "void",
+        "unlabelled",
         "grass",
         "bush",
         "dirt",
