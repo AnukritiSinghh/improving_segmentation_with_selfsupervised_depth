@@ -2,7 +2,20 @@ def preselected_labels(seed, n, dataset, method="ds_us"):
     SELECTED_LABELS = {
         "cityscapes": {},
         "camvid": {},
+        "offroad': {},
     }
+   
+    SELECTED_LABELS["offroad"][] = {
+        #labels selected per sequence on rellis dataset
+        42: lablels
+        
+    }
+
+
+
+
+
+
     SELECTED_LABELS["camvid"]["ds_us"] = {
         # camvid_depthifp_u3-avg4_bias1000ldepth_donly_labsch_25-50-100_4-8-12-scratch_evseg__S42_adamLr1.0E-041.0E-041.0E-041.0E-06poly_clip100000_m0s1pd1_dlFalse_crop512x512bs2_flip_r101_dec9__l8os2hi
         42: [193, 135, 214, 58, 351, 26, 302, 0, 59, 279, 29, 314, 116, 64, 11, 159, 239, 258, 94, 53, 285, 32, 97, 359, 164, 6, 348, 133, 204, 49, 10, 14, 81, 171, 101, 18, 231, 278, 98, 92, 105, 280, 360, 145, 308, 23, 362, 225, 56, 125, 179, 152, 161, 217, 24, 170, 140, 8, 15, 34, 72, 3, 60, 345, 357, 157, 90, 306, 20, 73, 16, 169, 213, 352, 227, 2, 154, 28, 222, 330, 136, 100, 13, 256, 163, 48, 364, 338, 91, 303, 99, 240, 80, 149, 201, 277, 148, 215, 281, 30],
